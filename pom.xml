@@ -32,6 +32,8 @@
 				<extensions>true</extensions>
 				<configuration>
 					<cloudHubDeployment>
+						<username>tusharpuri002</username>
+						<password>TushP0101</password>
 						<muleVersion>4.3.0</muleVersion>
 					</cloudHubDeployment>	
 				</configuration>
