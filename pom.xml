@@ -34,7 +34,12 @@
 					<cloudHubDeployment>
 						<username>tusharpuri002</username>
 						<password>TushP0101</password>
+						<environment>Sandbox</environment>
+						<workers>1</workers>
+						<workerType>Micro</workerType>
+						<applicationName>Hello-Application-2</applicationName>
 						<muleVersion>4.3.0</muleVersion>
+						<objectStoreV2>true</objectStoreV2>
 					</cloudHubDeployment>	
 				</configuration>
 			</plugin>
