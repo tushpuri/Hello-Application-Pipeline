@@ -17,10 +17,8 @@ pipeline {
                               ANYPOINT_CREDENTIALS = credentials('wp.anypoint.credentials')
                               }       
                               steps {
-                                      echo 'Deploying only because of code commit...'        
-                                      echo " deploying to  ${params.env} environent"
-                                      echo " worker is  ${params.workerType}"        
-                                      bat 'mvn package deploy -DmuleDeploy -Dusername=${ANYPOINT_CREDENTIALS_USR} -Dpassword=${ANYPOINT_CREDENTIALS_PSW} -Denvironment=DEV -DworkerType=Micro -Dworkers=1 -Dregion=us-west-2'      
+                                      echo 'Deploying only because of code commit...'      
+                                      bat 'mvn package deploy -DmuleDeploy -Dusername=tusharpuri002 -Dpassword=TushP0101 -Denvironment=Sandbox -DworkerType=Micro -Dworkers=1'      
                                    	}    
                               }  
                       }
