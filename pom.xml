@@ -5,7 +5,7 @@
 
 	<groupId>com.mycompany</groupId>
 	<artifactId>jenkins-pipeline-test</artifactId>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <packaging>mule-application</packaging>
 
 	<name>jenkins-test</name>
@@ -31,16 +31,6 @@
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
 				<configuration>
-					<cloudHubDeployment>
-						<username>tusharpuri002</username>
-						<password>TushP0101</password>
-						<environment>Sandbox</environment>
-						<workers>1</workers>
-						<workerType>Micro</workerType>
-						<applicationName>Hello-Application-2</applicationName>
-						<muleVersion>4.3.0</muleVersion>
-						<objectStoreV2>true</objectStoreV2>
-					</cloudHubDeployment>
 				</configuration>
 			</plugin>
 		</plugins>
