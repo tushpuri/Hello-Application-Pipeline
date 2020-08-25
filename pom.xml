@@ -39,6 +39,7 @@
 						<workerType>Micro</workerType>
 						<applicationName>Hello-Application-2</applicationName>
 						<muleVersion>4.3.0</muleVersion>
+						<objectStoreV2>true</objectStoreV2>
 					</cloudHubDeployment>
 				</configuration>
 			</plugin>
