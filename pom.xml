@@ -34,7 +34,7 @@
 					<cloudHubDeployment>
 						<username>${anypoint.username}</username>
 						<password>${anypoint.password}</password>
-						<environment>${anypoint.password}</environment>
+						<environment>${anypoint.environment}</environment>
 						<workers>${anypoint.workers}</workers>
 						<workerType>${anypoint.workersType}</workerType>
 						<applicationName>${anypoint.applicationName}</applicationName>
