@@ -5,7 +5,7 @@
 
 	<groupId>com.mycompany</groupId>
 	<artifactId>jenkins-pipeline-test</artifactId>
-    <version>1.0.2</version>
+    <version>1.0.3</version>
     <packaging>mule-application</packaging>
 
 	<name>jenkins-test</name>
@@ -40,7 +40,6 @@
 						<applicationName>${anypoint.applicationName}</applicationName>
 						<muleVersion>${anypoint.muleVersion}</muleVersion>
 						<objectStoreV2>true</objectStoreV2>
-						<objectStoreV1>false</objectStoreV1>
 					</cloudHubDeployment>	
 				</configuration>
 			</plugin>
