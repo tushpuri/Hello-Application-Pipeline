@@ -19,7 +19,7 @@ pipeline {
 		       steps {
 			       echo 'Deploying only because of code commit in ${env}'
 			       echo '${ANYPOINT_CREDENTIALS_USR}'
-			       bat 'mvn package deploy -DmuleDeploy -Danypoint.environment=${env} -Danypoint.username=tusharpuri002 -Danypoint.password=TushP0101 -Danypoint.workers=1 -Danypoint.workersType=MICRO -Danypoint.applicationName=Hello-Application-2 -Danypoint.muleVersion=4.3.0 -DobjectStoreV2=true'
+			       bat 'mvn package deploy -DmuleDeploy -Danypoint.environment=$env -Danypoint.username=tusharpuri002 -Danypoint.password=TushP0101 -Danypoint.workers=1 -Danypoint.workersType=MICRO -Danypoint.applicationName=Hello-Application-2 -Danypoint.muleVersion=4.3.0 -DobjectStoreV2=true'
 		       }    
 	       }  
 	}
