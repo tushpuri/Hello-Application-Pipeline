@@ -1,6 +1,6 @@
 pipeline {  
 	agent any
-	options([parameters([string(defaultValue: 'Sandbox', description: '', name: 'env', trim: false)])])
+	
 	stages {
 		stage('Build Application') {
 	        	steps {
@@ -14,7 +14,7 @@ pipeline {
         		}   
 		}
                stage('Deploy CloudHub') {
-		       
+		       options([parameters([string(defaultValue: 'Sandbox', description: '', name: 'env', trim: false)])])
 		       environment {
 			       ANYPOINT_CREDENTIALS = credentials('Anypoint_Studio')
 		       }
