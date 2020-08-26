@@ -1,6 +1,6 @@
 pipeline {  
 	agent any
-	properties([parameters([string(defaultValue: 'Sandbox', description: '', name: 'env', trim: false)])])
+	options([parameters([string(defaultValue: 'Sandbox', description: '', name: 'env', trim: false)])])
 	stages {
 		stage('Build Application') {
 	        	steps {
