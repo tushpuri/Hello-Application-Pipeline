@@ -17,7 +17,9 @@ pipeline {
 			       ANYPOINT_CREDENTIALS = credentials('Anypoint_Studio')
 		       }
 		       steps {
-			       echo 'Deploying only because of code commit in' ${params.env}      
+			       echo 'Deploying only because of code commit in ${params.env}'
+			       echo
+			       bat 'mvn package deploy -DmuleDeploy -Danypoint.environment=${params.env} -Danypoint.username=${ANYPOINT_CREDENTIALS_USR} -Danypoint.password=${ANYPOINT_CREDENTIALS_PSW} -Danypoint.workers=1 -Danypoint.workersType=MICRO -Danypoint.applicationName=Hello-Application-2 -Danypoint.muleVersion=4.3.0 -DobjectStoreV2=true'
 		       }    
 	       }  
 	}
