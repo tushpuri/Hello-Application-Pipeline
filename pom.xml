@@ -39,7 +39,7 @@
 						<workerType>${anypoint.workersType}</workerType>
 						<applicationName>${anypoint.applicationName}</applicationName>
 						<muleVersion>${anypoint.muleVersion}</muleVersion>
-						<objectStoreV2>${anypoint.objectStoreV2}</objectStoreV2>
+						<objectStoreV2>true</objectStoreV2>
 					</cloudHubDeployment>	
 				</configuration>
 			</plugin>
