@@ -32,14 +32,14 @@
 				<extensions>true</extensions>
 				<configuration>
 					<cloudHubDeployment>
-						<username>tusharpuri002</username>
-						<password>TushP0101</password>
-						<environment>Sandbox</environment>
-						<workers>1</workers>
-						<workerType>Micro</workerType>
-						<applicationName>Hello-Application-2</applicationName>
-						<muleVersion>4.3.0</muleVersion>
-						<objectStoreV2>true</objectStoreV2>
+						<username>${anypoint.username}</username>
+						<password>${anypoint.password}</password>
+						<environment>${anypoint.password}</environment>
+						<workers>${anypoint.workers}</workers>
+						<workerType>${anypoint.workersType}</workerType>
+						<applicationName>${anypoint.applicationName}</applicationName>
+						<muleVersion>${anypoint.muleVersion}</muleVersion>
+						<objectStoreV2>${anypoint.objectStoreV2}</objectStoreV2>
 					</cloudHubDeployment>	
 				</configuration>
 			</plugin>
