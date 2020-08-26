@@ -9,7 +9,7 @@ pipeline {
 	        stage('Test') {
 	               steps {
 	                  	echo 'Test Appplication...' 
-        		  	bat 'mvn test'      
+        		  	bat 'mvn clean test'      
         		}   
 		}
                stage('Deploy CloudHub') {
