@@ -17,7 +17,7 @@ pipeline {
 			       ANYPOINT_CREDENTIALS = credentials('Anypoint_Studio')
 		       }
 		       steps {
-			       echo 'Deploying only because of code commit in ${params.env}'      
+			       echo 'Deploying only because of code commit in' ${params.env}      
 		       }    
 	       }  
 	}
